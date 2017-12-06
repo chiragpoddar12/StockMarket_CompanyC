@@ -13,7 +13,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 @RestController
 public class TestControllerCompanyC {
-	@RequestMapping(value = "/companyC", method = RequestMethod.GET)
+	@RequestMapping(value = "/GHI", method = RequestMethod.GET)
 	public Company firstPage() {
 		Company cmp = new Company();
 		cmp.setName("GHI");
@@ -22,7 +22,7 @@ public class TestControllerCompanyC {
 		cmp.setSharesDoublesWhen(200);
 		return cmp;
 	}
-	@RequestMapping(value = "/companyC", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_UTF8_VALUE)
+	@RequestMapping(value = "/GHI", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_UTF8_VALUE)
 	public ResponseEntity<ResponseUpgrade> update(@RequestBody ResponseUpgrade response) {
 //	    ResponseUpgrade response= null;
 		if (response != null) {
