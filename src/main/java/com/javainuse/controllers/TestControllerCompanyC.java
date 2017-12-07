@@ -13,16 +13,16 @@ import java.sql.SQLException;
 import java.sql.Statement;
 @RestController
 public class TestControllerCompanyC {
-	@RequestMapping(value = "/GHI", method = RequestMethod.GET)
+	@RequestMapping(value = "/GOOGLE", method = RequestMethod.GET)
 	public Company firstPage() {
 		Company cmp = new Company();
-		cmp.setName("GHI");
+		cmp.setName("GOOGLE");
 		cmp.setNumberOfShares(400);
 		cmp.setPriceOfShares(50);
 		cmp.setSharesDoublesWhen(200);
 		return cmp;
 	}
-	@RequestMapping(value = "/GHI", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_UTF8_VALUE)
+	@RequestMapping(value = "/GOOGLE", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_UTF8_VALUE)
 	public ResponseEntity<ResponseUpgrade> update(@RequestBody ResponseUpgrade response) {
 //	    ResponseUpgrade response= null;
 		if (response != null) {
